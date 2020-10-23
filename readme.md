@@ -2,7 +2,7 @@
 
 > CLI for creating reusable, modern React ts libraries using Rollup and Parcel.
 
-[![NPM](https://img.shields.io/npm/v/create-parcel-react-library.svg)](https://www.npmjs.com/package/create-parcel-react-library) [![Build Status](https://travis-ci.com/21epub/create-parcel-react-library.svg?branch=master)](https://travis-ci.com/21epub/create-parcel-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@21epub/create-parcel-react-library.svg)](https://www.npmjs.com/package/@21epub/create-parcel-react-library) [![Build Status](https://travis-ci.com/21epub/create-parcel-react-library.svg?branch=master)](https://travis-ci.com/21epub/create-parcel-react-library) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Intro
 

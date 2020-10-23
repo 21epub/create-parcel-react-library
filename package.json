@@ -60,5 +60,9 @@
       "index.test.js",
       "lib/**/*.test.js"
     ]
-  }
+  },
+  "files": [
+    "lib",
+    "template"
+  ]
 }
