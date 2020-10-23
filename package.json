@@ -13,7 +13,9 @@
     "create-parcel-react-library": "index.js"
   },
   "scripts": {
-    "test": "ava -v && standard *.js lib/*.js"
+    "test": "ava -v && standard *.js lib/*.js",
+    "release": "git fetch --tags && npx standard-version",
+    "release:alpha": "npm run release -- --prerelease alpha"
   },
   "keywords": [
     "react",

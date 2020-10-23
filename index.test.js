@@ -1,10 +1,10 @@
-"use strict";
+'use strict'
 
-const test = require("ava");
-const execa = require("execa");
+const test = require('ava')
+const execa = require('execa')
 
-test("--help", async (t) => {
-  const { stdout } = await execa("./index.js", ["--help"]);
-  t.true(stdout.length > 0);
-  t.true(/create-parcel-react-library/.test(stdout));
-});
+test('--help', async (t) => {
+  const { stdout } = await execa('./index.js', ['--help'])
+  t.true(stdout.length > 0)
+  t.true(/create-parcel-react-library/.test(stdout))
+})
