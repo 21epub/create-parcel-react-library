@@ -1,0 +1,105 @@
+{
+  "name": "{{name}}",
+  "version": "0.0.1",
+  "description": "{{description}}",
+  "author": "{{author}}",
+  "license": "{{license}}",
+  "homepage": "{{repo}}",
+  "repository": {
+    "type": "git",
+    "url": "git+{{repo}}.git"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "react",
+    "parcel",
+    "typescript"
+  ],
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel example/index.html --out-dir ./build",
+    "build-prod": "parcel build example/index.html --out-dir ./build",
+    "test": "jest --coverage",
+    "lint": "run-s lint:js lint:style lint:prettier",
+    "lint-staged:js": "eslint --fix --cache --ext .ts,.tsx ./src",
+    "lint:js": "eslint --fix --cache --ext .ts,.tsx ./src",
+    "lint:prettier": "prettier --check --write \"**/*\" --end-of-line auto",
+    "lint:style": "stylelint --fix \"src/**/*.less\" --syntax less",
+    "start-w": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "prettier": "prettier -c --write \"**/*\"",
+    "release": "git fetch --tags && npx standard-version",
+    "release:alpha": "{{manage}} run release -- --prerelease alpha",
+    "commit": "lint-staged && npx git-cz --no-verify",
+    "prepublishOnly": "run-s lint test build",
+    "install-peers": "npm-install-peers"
+  },
+  "lint-staged": {
+    "**/*.less": "stylelint --fix --syntax less",
+    "**/*.{ts,tsx}": "{{manage}} run lint-staged:js",
+    "**/*.{tsx,ts,less,md,json}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "7.11.6",
+    "@babel/preset-env": "7.11.5",
+    "@babel/preset-react": "7.10.4",
+    "@babel/preset-typescript": "7.10.4",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "26.0.14",
+    "@types/react": "16.9.50",
+    "@types/react-dom": "16.9.8",
+    "@typescript-eslint/eslint-plugin": "4.0.1",
+    "@typescript-eslint/parser": "4.0.1",
+    "autoprefixer": "9.8.6",
+    "babel-jest": "26.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "4.3.0",
+    "jest": "26.4.2",
+    "less": "^3.12.2",
+    "lint-staged": "^10.0.0",
+    "microbundle-crl": "^0.13.11",
+    "npm-install-peers": "1.2.1",
+    "npm-run-all": "4.1.5",
+    "parcel-bundler": "1.12.4",
+    "postcss-modules": "3.2.2",
+    "prettier": "2.1.2",
+    "stylelint": "^13.0.0",
+    "stylelint-config-css-modules": "2.2.0",
+    "stylelint-config-prettier": "8.0.2",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.3.0",
+    "typescript": "4.0.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
