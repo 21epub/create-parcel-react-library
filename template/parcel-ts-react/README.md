@@ -1,6 +1,6 @@
 # {{name}}
 
-> Rxjs Subject with React Hooks
+> {{description}}
 
 [![NPM](https://img.shields.io/npm/v/{{name}}.svg)](https://www.npmjs.com/package/{{name}}) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Build Status](https://travis-ci.com/{{name}}.svg?branch=master)](https://travis-ci.com/{{name}}) ![Codecov](https://img.shields.io/codecov/c/github/{{name}})
 
