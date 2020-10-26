@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.0.7](https://github.com/21epub/create-parcel-react-library/compare/v0.0.6...v0.0.7) (2020-10-26)
+
+
+### Bug Fixes
+
+* less in js support added ([e6b6b77](https://github.com/21epub/create-parcel-react-library/commit/e6b6b77))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.0.6](https://github.com/21epub/create-parcel-react-library/compare/v0.0.5...v0.0.6) (2020-10-26)
 
 
