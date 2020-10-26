@@ -22,3 +22,4 @@ CNAME
 /build
 .cache
 coverage
+.npmignore

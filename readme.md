@@ -26,7 +26,7 @@ Take advantage of Parcel and Rollup .
 - [x] TypeScript Only
 - [x] Sourcemap creation
 - [x] lint-staged support
-- [X] Conventional commit by `git-cz`
+- [X] [Conventional commit](https://github.com/streamich/git-cz) by `git-cz`
 - [X] Standard-version by `npm run release`
 - [X] github Actions
 - [X] Format on Save ( Vscode Editor )
@@ -72,6 +72,12 @@ npm start # start your example dev code
 ```
 
 Now, anytime you make a change to your library in `src/` or `example/` will live-reload your parcel dev so you can iterate on your component in real-time.
+
+Commit Method Recommandation
+
+```bash
+npm run commit # lint before commit can save your time , and then conventional commit with git-cz
+```
 
 #### Publishing to npm
 
