@@ -73,6 +73,11 @@ npm start # start your example dev code
 
 Now, anytime you make a change to your library in `src/` or `example/` will live-reload your parcel dev so you can iterate on your component in real-time.
 
+Update Peer Dependencies
+
+After update `peerDependencies` in package.json . 
+`npm run install-peers`
+
 Commit Method Recommandation
 
 ```bash
