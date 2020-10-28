@@ -75,8 +75,11 @@ Now, anytime you make a change to your library in `src/` or `example/` will live
 
 Update Peer Dependencies
 
-After update `peerDependencies` in package.json . 
-`npm run install-peers`
+After update `peerDependencies` in package.json .
+
+```bash
+npm run install-peers # reinstall peers after update
+```
 
 Commit Method Recommandation
 
