@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.0.10](https://github.com/21epub/create-parcel-react-library/compare/v0.0.9...v0.0.10) (2020-10-29)
+
+
+### Bug Fixes
+
+* package systax error ([b9d7261](https://github.com/21epub/create-parcel-react-library/commit/b9d7261))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.0.9](https://github.com/21epub/create-parcel-react-library/compare/v0.0.8...v0.0.9) (2020-10-28)
 
 
