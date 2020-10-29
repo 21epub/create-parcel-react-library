@@ -34,14 +34,14 @@
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "prettier": "prettier -c --write \"**/*\"",
     "release": "git fetch --tags && npx standard-version",
-    "release:alpha": "{{manage}} run release -- --prerelease alpha",
+    "release:alpha": "{{manager}} run release -- --prerelease alpha",
     "commit": "lint-staged && npx git-cz",
     "prepublishOnly": "run-s lint test build",
     "install-peers": "npm-install-peers"
   },
   "lint-staged": {
     "**/*.less": "stylelint --fix --syntax less",
-    "**/*.{ts,tsx}": "{{manage}} run lint-staged:js",
+    "**/*.{ts,tsx}": "{{manager}} run lint-staged:js",
     "**/*.{tsx,ts,less,md,json}": [
       "prettier --write"
     ]
