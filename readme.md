@@ -27,7 +27,7 @@ Take advantage of Parcel and Rollup .
 - [x] Sourcemap creation
 - [x] lint-staged support
 - [X] [Conventional commit](https://github.com/streamich/git-cz) by `git-cz`
-- [X] Standard-version by `npm run release`
+- [X] [standard-version](https://www.npmjs.com/package/standard-version?activeTab=versions) support by `npm run release`
 - [X] github Actions
 - [X] Format on Save ( Vscode Editor )
 - [X] Travis CI & Code coverage by custom configration
@@ -41,6 +41,8 @@ npm install -g @21epub/create-parcel-react-library
 ```
 
 ## Usage with npx
+
+> No need to create an empty folder before running.
 
 ```bash
 npx @21epub/create-parcel-react-library
