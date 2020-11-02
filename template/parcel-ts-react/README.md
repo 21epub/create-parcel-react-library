@@ -52,7 +52,7 @@ To run Example in hot module reloading mode:
 npm start
 ```
 
-To create a parcel production build:
+To create a parcel example production build:
 
 ```sh
 npm run build-prod

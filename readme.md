@@ -94,7 +94,7 @@ npm run commit # lint before commit can save your time , and then conventional c
 ```bash
 npm run release # Version and changelog
 git push --follow-tags origin master
-npm publish
+npm publish # The `prePublishOnly` hook will run before publish to build and test your package
 ```
 
 This builds `commonjs` and `es` versions of your module to `dist/` and then publishes your module to `npm`.
