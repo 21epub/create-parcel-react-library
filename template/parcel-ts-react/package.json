@@ -4,10 +4,10 @@
   "description": "{{description}}",
   "author": "{{author}}",
   "license": "{{license}}",
-  "homepage": "{{repo}}",
+  "homepage": "https://github.com/{{repo}}",
   "repository": {
     "type": "git",
-    "url": "git+{{repo}}.git"
+    "url": "git+https://github.com/{{repo}}.git"
   },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -22,8 +22,10 @@
   ],
   "scripts": {
     "clean": "rm dist/bundle.js",
+    "clean-build": "rm build/*",
     "start": "parcel example/index.html --out-dir ./build",
-    "build-prod": "parcel build example/index.html --out-dir ./build",
+    "build-example": "parcel build example/index.html --out-dir ./build",
+    "build-prod": "run-s clean-build build-example",
     "test": "jest --coverage",
     "lint": "run-s lint:js lint:style lint:prettier",
     "lint-staged:js": "eslint --fix --cache --ext .ts,.tsx ./src",
