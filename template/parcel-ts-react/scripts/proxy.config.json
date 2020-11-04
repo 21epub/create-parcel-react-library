@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "http://url.to/",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "/api": "/api"
+    }
+  }
+}

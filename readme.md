@@ -31,6 +31,7 @@ Take advantage of Parcel and Rollup .
 - [X] github Actions
 - [X] Format on Save ( Vscode Editor )
 - [X] Travis CI & Code coverage by custom configration
+- [x] [parcel-proxy-server](https://www.npmjs.com/package/parcel-proxy-server) for Proxy serve support
 
 ## Install globally
 
@@ -88,6 +89,16 @@ Commit Method Recommandation
 ```bash
 npm run commit # lint before commit can save your time , and then conventional commit with git-cz
 ```
+
+#### Proxy Server
+
+Set API proxy config in `./scripts/proxy.config.json`
+
+```bash
+npm run start:proxy  # start proxy server
+```
+
+Open proxy server url: `http://localhost:12345/`
 
 #### Publishing to npm
 
