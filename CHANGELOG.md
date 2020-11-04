@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.1.0](https://github.com/21epub/create-parcel-react-library/compare/v0.0.12...v0.1.0) (2020-11-04)
+
+
+### Features
+
+* proxy server support ([9a19f76](https://github.com/21epub/create-parcel-react-library/commit/9a19f76))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.0.12](https://github.com/21epub/create-parcel-react-library/compare/v0.0.11...v0.0.12) (2020-11-02)
 
 
