@@ -33,7 +33,7 @@
     "lint:js": "eslint --fix --cache --ext .ts,.tsx ./src",
     "lint:prettier": "prettier --check --write \"**/*\" --end-of-line auto",
     "lint:style": "stylelint --aei --fix \"src/**/*.less\" --syntax less",
-    "start-w": "microbundle-crl watch --no-compress --format modern,cjs",
+    "start-w": "microbundle-crl watch --no-compress --format modern,cjs --sourcemap",
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "prettier": "prettier -c --write \"**/*\"",
     "release": "git fetch --tags && npx standard-version",
@@ -55,8 +55,8 @@
     }
   },
   "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "dependencies": {},
   "devDependencies": {
