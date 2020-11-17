@@ -7,5 +7,8 @@ module.exports = {
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: [
     '/node_modules/'
-  ]
+  ],
+  moduleNameMapper: {
+    '^.+\\.(css|less|scss)$': '<rootDir>/scripts/css-stub.js'
+  }
 }
