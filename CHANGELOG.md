@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [0.2.0](https://github.com/21epub/create-parcel-react-library/compare/v0.1.1...v0.2.0) (2020-11-20)
+
+
+### Features
+
+* add support for storybook ([27f339f](https://github.com/21epub/create-parcel-react-library/commit/27f339f))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 ## [0.1.1](https://github.com/21epub/create-parcel-react-library/compare/v0.1.0...v0.1.1) (2020-11-17)
 
 
