@@ -32,6 +32,7 @@ Take advantage of Parcel and Rollup .
 - [X] Format on Save ( Vscode Editor )
 - [X] Travis CI & Code coverage by custom configration
 - [x] [parcel-proxy-server](https://www.npmjs.com/package/parcel-proxy-server) for Proxy serve support
+- [x] [storybook](https://storybook.js.org/) support
 
 ## Install globally
 
@@ -83,6 +84,22 @@ After update `peerDependencies` in package.json .
 ```bash
 npm run install-peers # reinstall peers after update
 ```
+
+#### With storybook
+
+Init storybook environment by
+
+```bash
+npx sb init
+```
+
+Get Start with Storybook and develop your Component, [Reference docs](https://storybook.js.org/docs) 
+
+```bash
+npm run storybook
+```
+
+#### Commit
 
 Commit Method Recommandation
 
